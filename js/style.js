@@ -1,10 +1,10 @@
 class Newuser{
-    constructor(firstName, lastName, age, currentLevel, favouriteClub){
-        this.firstname = firstName;
-        this.lastname = lastName;
+    constructor(firstname, lastname, age, currentlevel, favclub){
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.age = age;
-        this.currentlevel = currentLevel;
-        this.favclub = favouriteClub;
+        this.currentlevel = currentlevel;
+        this.favclub = favclub;
     }
 }
 
@@ -13,11 +13,11 @@ class Tablesetting{
         let list = document.getElementById('table-data');
         let row = document.createElement('tr');
         row.innerHTML = `
-        <td>${register.firstName}</td>
-        <td>${register.lastName}</td>
+        <td>${register.firstname}</td>
+        <td>${register.lastname}</td>
         <td>${register.age}</td>
-        <td>${register.currentLevel}</td>
-        <td>${register.favouriteClub}</td>
+        <td>${register.currentlevel}</td>
+        <td>${register.favclub}</td>
         <td><button class="btn btn-danger">DELETE</button></td>    
         `;
         list.appendChild(row);
