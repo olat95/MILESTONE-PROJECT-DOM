@@ -1,0 +1,103 @@
+/* general styling */
+*{
+    border: 0;
+    padding: 0;
+}
+
+
+/* header styling */
+.bgheader{
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(134, 12, 12);
+    border-bottom: 1px solid gray;
+}
+
+.macface{
+    width: 80%;
+    height: 1000px;
+    /* border: 1px solid black; */
+    background-image: url(/images/Frame\ 1bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.nav-wrapper{
+    background-color: white;
+    grid-area: showcase;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px 7px 0 0;
+}
+.dot-wrapper{
+    display: flex;
+    padding: 10px;
+}
+
+#dot-1{
+    background-color: #EA2027 ;
+}
+#dot-2{
+    background-color: #FFC312;
+}
+#dot-3{
+    background-color: #009432;
+}
+
+.browser-dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.firstlogo{
+    margin-top: 20px;
+}
+
+
+
+
+/* form styliing */
+.form-section{
+    padding-top: 30px;
+    width: 100%;
+    height: 950px;
+    border-bottom: 1px solid rgb(189, 182, 182);
+}
+.ptext{
+    text-align: center;
+}
+.formstyle{
+    padding: 50px 10px;
+}
+
+.form-area{
+    width: 50%;
+    height:fit-content;
+}
+.movebutton{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* table styling */
+.table-section{
+    padding-top: 30px;
+    width: 100%;
+    height: 950px;
+}
+
+.tablestyling{
+    padding: 50px 10px;
+}
+
