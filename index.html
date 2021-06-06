@@ -10,24 +10,24 @@
     <title>Movie Club</title>
 </head>
 <body>
-    <header class="bgheader">
+    <header class="bgheader" id="home">
         <div class="macface">
             <div class="nav-wrapper">
                 <div class="dot-wrapper">
-                    <div id="dot-1" class="browser-dot"></div>
-                    <div id="dot-2" class="browser-dot"></div>
-                    <div id="dot-3" class="browser-dot"></div>
+                    <a href="#reg"><div id="dot-1" class="browser-dot"></div></a>
+                    <a href="#table"><div id="dot-2" class="browser-dot"></div></a>
+                    <a href=""><div id="dot-3" class="browser-dot"></div></a>
                 </div> 
             </div> 
             <div class="firstlogo">
                 <img src="images/Icon.png" alt="logo">
             </div>
             <div class="movecenter">
-                <div class="welcome">
-                    <img src="images/Welcome Club.png" alt="welcome" id="welimg">
+                <div>
+                    <img src="images/Welcome Club.png" alt="welcome" class="welcome1" id="welimg">
                 </div>
-                <div class="welcome">
-                    <a href="#reg"><button class="btn btn-danger">Register Here</button></a>
+                <div>
+                    <a href="#reg"><button class="btn btn-danger welcome2">Register Here</button></a>
                 </div>
             </div>
         </div>
@@ -42,48 +42,44 @@
                 <h2>MEMBER REGISTRATION</h2>
             </div>
         </div>
-        <div class="formstyle">
-            <div class="formarea">
-                <form id="dataform">
-                    <div class="form-col">
-                        <div class="col">
-                            <label for="fname">First Name:</label>
-                            <input type="text" class="form-control" placeholder="First Name" id="firstname"><br>
-                        </div>
-                        <div class="col">
-                            <label for="lname">Last Name:</label>
-                            <input type="text" class="form-control" placeholder="Last Name" id="lastname"><br>
-                        </div>
-                        <div class="col">
-                            <label for="age">Age:</label>
-                            <input type="text" class="form-control" placeholder="Age" id="yourage"><br>
-                        </div>
-                        <div class="col">
-                            <label for="clevel">Current Level:</label>
-                            <input type="text" class="form-control" placeholder="Current Level" id="yourlevel"><br>
-                        </div>
-                        <div class="col">
-                            <label for="favclub">Favourite Club:</label>
-                            <input type="text" class="form-control" placeholder="Favourite Club" id="yourclub"><br>
-                        </div>
+        <div class="formstyle form-data">
+            <form id="dataform" class="form-size">
+                <div class="form-col form-style">
+                    <div class="col">
+                        <label for="fname">First Name:</label>
+                        <input type="text" class="form-control" placeholder="First Name" id="firstname"><br>
                     </div>
-                </form>
-            </div>
+                    <div class="col">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" class="form-control" placeholder="Last Name" id="lastname"><br>
+                    </div>
+                    <div class="col">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" placeholder="Age" id="yourage"><br>
+                    </div>
+                    <div class="col">
+                        <label for="clevel">Current Level:</label>
+                        <input type="number" class="form-control" placeholder="Current Level" id="yourlevel"><br>
+                    </div>
+                    <div class="col">
+                        <label for="favclub">Favourite Club:</label>
+                        <input type="text" class="form-control" placeholder="Favourite Club" id="yourclub"><br>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-danger movebutton" id="submit">Save Member</button>
+                    </div>
+                </div>
+                
+            </form>            
         </div>
 
-        <div class ="movebutton">
-            <button type="submit" class="movebutton btn btn-danger">Save Member</button>
-        </div>
-
-        <br>
-            
         <a href="#table">View Table</a>
 
     </section>
 
     <section class="table-section" id="table">
         <div>
-            <img src="images/Icon2.png" alt="logo">
+            <a href="#home"><img src="images/Icon2.png" alt="logo"></a>
         </div>
         <div class="tablestyling">
             <table class="table table-striped">
@@ -116,6 +112,6 @@
             </ul>
         </nav>
     </section>
-    <script src="js/style.js"></script>
+    <script src="./js/style.js"></script>
 </body>
 </html>
